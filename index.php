@@ -19,14 +19,14 @@ if ($a !== '' && $b !== '' && $c !== '') {
 <!doctype html>
 <html lang="en"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Assignment 2 - PHP + Python</title>
+<title>Assignment 2</title>
 <style>
 body{font-family:Arial,sans-serif;margin:2rem}
 .card{border:1px solid #ddd;padding:1rem;border-radius:8px;max-width:900px}
 label{display:block;margin:.5rem 0} input,button{padding:.5rem}
 .muted{color:#666}
 </style></head><body>
-<h1>Assignment 2 — PHP calls Python</h1>
+<h1>Assignment 2</h1>
 
 <div class="card">
   <form method="get" action="">
@@ -35,7 +35,6 @@ label{display:block;margin:.5rem 0} input,button{padding:.5rem}
     <label>c: <input type="number" step="any" name="c" value="<?=htmlspecialchars($c)?>" required></label>
     <button type="submit">Calculate</button>
   </form>
-  <p class="muted">Or use URL like <code>?a=3&b=5&c=2</code></p>
 </div>
 
 <div class="card" style="margin-top:1rem">

@@ -26,7 +26,7 @@ def parse_inputs():
     return a, b, c
 
 def html(body):
-    return f"""Content-Type: text/html
+    return f"""
 
 <!doctype html>
 <html lang="en"><head>
@@ -36,6 +36,7 @@ body{{font-family:Arial,sans-serif;margin:2rem}} .card{{border:1px solid #ddd;pa
 .muted{{color:#666}}
 </style></head><body>
 <h1>Assignment 2 — Calculation</h1>
+<h2>Guenda Zorz</h2>
 <div class="card">{body}</div>
 </body></html>"""
 
@@ -59,7 +60,6 @@ def main():
           <li>Add b: {m} + {b} = <strong>{result}</strong></li>
         </ol>
         <h2>Final Result</h2><p><strong>{result}</strong></p>
-        <p class="muted">Tip: try <code>?a=3&b=5&c=2</code></p>
         """
         print(html(body))
     except Exception as e:
